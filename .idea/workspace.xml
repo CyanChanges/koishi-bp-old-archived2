@@ -5,17 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1ffaa66b-b780-4984-b3d8-cb0d7cf1e4b5" name="更改" comment="chore: init dispose-root">
-      <change afterPath="$PROJECT_DIR$/plugins/dispose-root/.editorconfig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/plugins/dispose-root/.gitattributes" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/plugins/dispose-root/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/plugins/dispose-root/.npmignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/plugins/dispose-root/package.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/plugins/dispose-root/readme.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/plugins/dispose-root/src/disposer.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/plugins/dispose-root/src/index.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/plugins/dispose-root/src/notifier.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/plugins/dispose-root/src/utils.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/plugins/dispose-root/tsconfig.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/dispose-root/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/dispose-root/package.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -102,7 +93,7 @@
       <updated>1700228066054</updated>
       <workItem from="1704878633986" duration="20189000" />
       <workItem from="1704951772848" duration="707000" />
-      <workItem from="1705399728618" duration="14901000" />
+      <workItem from="1705399728618" duration="15132000" />
     </task>
     <task id="LOCAL-00001" summary="chore: init dispose-root&#10;chore: update boilerplate&#10;chore: remove koishi sources">
       <option name="closed" value="true" />
@@ -120,7 +111,15 @@
       <option name="project" value="LOCAL" />
       <updated>1705414571782</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="chore: init dispose-root">
+      <option name="closed" value="true" />
+      <created>1705414766791</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1705414766791</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -141,6 +140,7 @@
     <MESSAGE value="chore: init dispose-root&#10;chore: update boilerplate" />
     <MESSAGE value="chore: init dispose-root&#10;chore: update boilerplate&#10;chore: remove koishi sources" />
     <MESSAGE value="chore: link submodules" />
+    <MESSAGE value="chore: init dispose-root&#10;chore: basic functions" />
     <MESSAGE value="chore: init dispose-root" />
     <option name="LAST_COMMIT_MESSAGE" value="chore: init dispose-root" />
   </component>
