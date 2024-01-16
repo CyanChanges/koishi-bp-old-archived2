@@ -1,0 +1,3 @@
+[submodule "plugins/dispose-root"]
+	path = plugins/dispose-root
+	url = https://github.com/CyanChanges/koishi-plugin-dispose-root
