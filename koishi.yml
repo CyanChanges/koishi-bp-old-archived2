@@ -65,4 +65,7 @@ plugins:
         - .
   group:developing:
     koishi-env:exhp3n: {}
-  ~dispose-root:gsc90h: {}
+  dispose-root:gsc90h:
+    disposer:
+      immediately: false
+  ~useless:ejxia6: {}

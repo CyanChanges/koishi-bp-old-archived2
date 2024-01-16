@@ -60,7 +60,10 @@
     </option>
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/plugins/dispose-root" />
+  </component>
+  <component name="LLMProjectSettings">
+    <option name="turned_on" value="false" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -87,7 +90,7 @@
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_interpreter_path": "node",
     "nodejs_package_manager_path": "yarn",
-    "npm.dev.executor": "Debug",
+    "npm.dev.executor": "Run",
     "run.code.analysis.last.selected.profile": "pProject Default",
     "settings.editor.selected.configurable": "ml.llm.LLMProjectConfigurable",
     "ts.external.directory.path": "/sdcard/Projects/WebstormProjects/koishi-bp/node_modules/typescript/lib",
@@ -110,6 +113,7 @@
       <scripts>
         <script value="dev" />
       </scripts>
+      <arguments value="--log-level=5" />
       <node-interpreter value="project" />
       <envs>
         <env name="NODE_ENV" value="development" />
@@ -127,12 +131,23 @@
       <updated>1700228066054</updated>
       <workItem from="1704878633986" duration="20189000" />
       <workItem from="1704951772848" duration="707000" />
-      <workItem from="1705399728618" duration="11861000" />
+      <workItem from="1705399728618" duration="14662000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="VueSettings">
     <option name="innerServiceType" value="TS_SERVICE" />
@@ -150,12 +165,6 @@
           <url>file://$PROJECT_DIR$/plugins/koishi-env/src/node/checker.ts</url>
           <line>183</line>
           <option name="timeStamp" value="27" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="javascript">
-          <url>file://$PROJECT_DIR$/external/dispose-root/src/index.ts</url>
-          <line>18</line>
-          <properties lambdaOrdinal="-1" />
-          <option name="timeStamp" value="34" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
