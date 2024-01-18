@@ -23,6 +23,7 @@ plugins:
     config:63u9cc: {}
     console:6fhd64:
       open: false
+      devMode: true
     dataview:ca1n0i: {}
     desktop:zcjwmm:
       $if: env.KOISHI_AGENT?.includes('Desktop')
@@ -68,4 +69,7 @@ plugins:
   dispose-root:gsc90h:
     disposer:
       immediately: false
-  ~useless:ejxia6: {}
+      keepApp: true
+  ~useless:ejxia6: null
+  test:9142wm:
+    test: '${{ env.NODE_ENV === ''production'' ? ''foo'' : ''bar''}}'

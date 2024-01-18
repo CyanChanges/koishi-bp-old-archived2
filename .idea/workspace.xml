@@ -4,9 +4,32 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1ffaa66b-b780-4984-b3d8-cb0d7cf1e4b5" name="更改" comment="chore: init dispose-root">
+    <list default="true" id="1ffaa66b-b780-4984-b3d8-cb0d7cf1e4b5" name="更改" comment="fix: fix reload not interpolate">
+      <change afterPath="$PROJECT_DIR$/external/dispose-root/client/DisposedNotice.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/external/dispose-root/client/handler.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/external/dispose-root/client/index.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/external/dispose-root/client/receiver.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/external/dispose-root/client/tsconfig.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/external/koishi-env/src/index.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/dispose-root/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/dispose-root/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.yarn/releases/yarn-4.0.1.cjs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.yarnrc.yml" beforeDir="false" afterPath="$PROJECT_DIR$/.yarnrc.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/external/dispose-root/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/external/dispose-root/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/external/dispose-root/src/disposer.ts" beforeDir="false" afterPath="$PROJECT_DIR$/external/dispose-root/src/disposer.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/external/dispose-root/src/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/external/dispose-root/src/index.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/external/dispose-root/src/notifier.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/external/dispose-root/src/notifier.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/external/dispose-root/src/utils.ts" beforeDir="false" afterPath="$PROJECT_DIR$/external/dispose-root/src/utils.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/external/dispose-root/tsconfig.json" beforeDir="false" afterPath="$PROJECT_DIR$/external/dispose-root/tsconfig.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/external/koishi-env/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/external/koishi-env/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/external/test/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/external/test/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/external/test/src/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/external/test/src/index.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/koishi.yml" beforeDir="false" afterPath="$PROJECT_DIR$/koishi.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/dispose-root" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/koishi-env" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tsconfig.temp.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -17,12 +40,14 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="JavaScript File" />
+        <option value="tsconfig.json" />
+        <option value="Vue Composition API Component" />
         <option value="TypeScript File" />
       </list>
     </option>
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/plugins/dispose-root" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/external/dispose-root" />
   </component>
   <component name="LLMProjectSettings">
     <option name="turned_on" value="false" />
@@ -39,33 +64,38 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ASKED_ADD_EXTERNAL_FILES": "true",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "main",
-    "last_opened_file_path": "/sdcard/Projects/WebstormProjects/koishi-bp",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_interpreter_path": "node",
-    "nodejs_package_manager_path": "yarn",
-    "npm.dev.executor": "Run",
-    "run.code.analysis.last.selected.profile": "pProject Default",
-    "settings.editor.selected.configurable": "ml.llm.LLMProjectConfigurable",
-    "ts.external.directory.path": "/sdcard/Projects/WebstormProjects/koishi-bp/node_modules/typescript/lib",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/sdcard/Projects/WebstormProjects/koishi&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_interpreter_path&quot;: &quot;node&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;yarn&quot;,
+    &quot;npm.dev.executor&quot;: &quot;Run&quot;,
+    &quot;run.code.analysis.last.selected.profile&quot;: &quot;pProject Default&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;settings.typescriptcompiler&quot;,
+    &quot;ts.external.directory.path&quot;: &quot;/sdcard/Projects/WebstormProjects/koishi-bp/node_modules/typescript/lib&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  },
+  &quot;keyToStringList&quot;: {
+    &quot;vue.recent.templates&quot;: [
+      &quot;Vue Composition API Component&quot;
+    ]
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/external" />
       <recent name="$PROJECT_DIR$/plugins" />
       <recent name="$PROJECT_DIR$/external/is-kon/src/node" />
       <recent name="$PROJECT_DIR$/external/is-kon/src" />
       <recent name="$PROJECT_DIR$/external/is-kon/shared" />
-      <recent name="$PROJECT_DIR$/external/is-kon/" />
     </key>
   </component>
   <component name="RunManager">
@@ -79,6 +109,7 @@
       <node-interpreter value="project" />
       <envs>
         <env name="NODE_ENV" value="development" />
+        <env name="NODE_ENVIROMENT" value="development" />
       </envs>
       <method v="2" />
     </configuration>
@@ -94,6 +125,13 @@
       <workItem from="1704878633986" duration="20189000" />
       <workItem from="1704951772848" duration="707000" />
       <workItem from="1705399728618" duration="15132000" />
+      <workItem from="1705541612907" duration="21000" />
+      <workItem from="1705543687555" duration="4392000" />
+      <workItem from="1705548096352" duration="226000" />
+      <workItem from="1705548327334" duration="3181000" />
+      <workItem from="1705551852955" duration="2102000" />
+      <workItem from="1705553960888" duration="19002000" />
+      <workItem from="1705573110303" duration="331000" />
     </task>
     <task id="LOCAL-00001" summary="chore: init dispose-root&#10;chore: update boilerplate&#10;chore: remove koishi sources">
       <option name="closed" value="true" />
@@ -157,9 +195,34 @@
           <option name="timeStamp" value="22" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="javascript">
-          <url>file://$PROJECT_DIR$/plugins/koishi-env/src/node/checker.ts</url>
-          <line>183</line>
-          <option name="timeStamp" value="27" />
+          <url>file://$PROJECT_DIR$/external/webui/plugins/config/lib/shared/index.js</url>
+          <line>271</line>
+          <option name="timeStamp" value="28" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/node_modules/koishi/src/worker/daemon.ts</url>
+          <line>36</line>
+          <option name="timeStamp" value="61" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/node_modules/@koishijs/loader/src/shared.ts</url>
+          <line>406</line>
+          <option name="timeStamp" value="63" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/node_modules/@koishijs/loader/src/index.ts</url>
+          <line>92</line>
+          <option name="timeStamp" value="64" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/node_modules/@koishijs/loader/src/index.ts</url>
+          <line>95</line>
+          <option name="timeStamp" value="65" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/node_modules/@koishijs/loader/lib/shared.mjs</url>
+          <line>349</line>
+          <option name="timeStamp" value="66" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
