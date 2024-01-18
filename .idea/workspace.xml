@@ -7,6 +7,8 @@
     <list default="true" id="1ffaa66b-b780-4984-b3d8-cb0d7cf1e4b5" name="更改" comment="fix: `onclick` isn't `onClick`, btw also declared the typing too">
       <change beforePath="$PROJECT_DIR$/external/dispose-root" beforeDir="false" afterPath="$PROJECT_DIR$/external/dispose-root" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/external/dispose-root/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/external/dispose-root/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/external/dispose-root/src/disposer.ts" beforeDir="false" afterPath="$PROJECT_DIR$/external/dispose-root/src/disposer.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/external/dispose-root/src/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/external/dispose-root/src/index.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/external/dispose-root/src/notifier.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/external/dispose-root/src/notifier.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/external/test" beforeDir="false" afterPath="$PROJECT_DIR$/external/test" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/external/test/src/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/external/test/src/index.ts" afterDir="false" />
