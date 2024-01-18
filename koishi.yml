@@ -8,7 +8,10 @@ plugins:
   group:basic:
     ~admin:35m7ta: {}
     ~bind:silulr: {}
-    commands:2oikfw: {}
+    commands:2oikfw:
+      cx:
+        aliases:
+          查: {}
     help:aw4yij: {}
     ~inspect:9vkkrn: {}
     locales:ycivv1: {}
@@ -68,8 +71,9 @@ plugins:
     koishi-env:exhp3n: {}
   dispose-root:gsc90h:
     disposer:
-      immediately: false
       keepApp: true
   ~useless:ejxia6: null
   test:9142wm:
     test: '${{ env.NODE_ENV === ''production'' ? ''foo'' : ''bar''}}'
+  ~oni:5ms9oo: {}
+  puppeteer:a5rwj4: {}

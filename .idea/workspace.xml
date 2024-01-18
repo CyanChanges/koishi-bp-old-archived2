@@ -4,32 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1ffaa66b-b780-4984-b3d8-cb0d7cf1e4b5" name="更改" comment="fix: fix reload not interpolate">
-      <change afterPath="$PROJECT_DIR$/external/dispose-root/client/DisposedNotice.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/external/dispose-root/client/handler.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/external/dispose-root/client/index.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/external/dispose-root/client/receiver.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/external/dispose-root/client/tsconfig.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/external/koishi-env/src/index.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.yarn/releases/yarn-4.0.1.cjs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.yarnrc.yml" beforeDir="false" afterPath="$PROJECT_DIR$/.yarnrc.yml" afterDir="false" />
+    <list default="true" id="1ffaa66b-b780-4984-b3d8-cb0d7cf1e4b5" name="更改" comment="fix: `onclick` isn't `onClick`, btw also declared the typing too">
+      <change beforePath="$PROJECT_DIR$/external/dispose-root" beforeDir="false" afterPath="$PROJECT_DIR$/external/dispose-root" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/external/dispose-root/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/external/dispose-root/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/external/dispose-root/src/disposer.ts" beforeDir="false" afterPath="$PROJECT_DIR$/external/dispose-root/src/disposer.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/external/dispose-root/src/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/external/dispose-root/src/index.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/external/dispose-root/src/notifier.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/external/dispose-root/src/notifier.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/external/dispose-root/src/utils.ts" beforeDir="false" afterPath="$PROJECT_DIR$/external/dispose-root/src/utils.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/external/dispose-root/tsconfig.json" beforeDir="false" afterPath="$PROJECT_DIR$/external/dispose-root/tsconfig.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/external/koishi-env/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/external/koishi-env/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/external/test/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/external/test/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/external/test" beforeDir="false" afterPath="$PROJECT_DIR$/external/test" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/external/test/src/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/external/test/src/index.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/koishi.yml" beforeDir="false" afterPath="$PROJECT_DIR$/koishi.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/dispose-root" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/koishi-env" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tsconfig.temp.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -48,6 +28,7 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/external/dispose-root" />
+    <option name="ROOT_SYNC" value="DONT_SYNC" />
   </component>
   <component name="LLMProjectSettings">
     <option name="turned_on" value="false" />
@@ -132,6 +113,7 @@
       <workItem from="1705551852955" duration="2102000" />
       <workItem from="1705553960888" duration="19002000" />
       <workItem from="1705573110303" duration="331000" />
+      <workItem from="1705573449018" duration="2499000" />
     </task>
     <task id="LOCAL-00001" summary="chore: init dispose-root&#10;chore: update boilerplate&#10;chore: remove koishi sources">
       <option name="closed" value="true" />
@@ -157,7 +139,15 @@
       <option name="project" value="LOCAL" />
       <updated>1705414766791</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="feat(dispose-root): frontend notice&#10;feat(dispose-root): dispose all effects&#10;chore: migrate to yarn v4">
+      <option name="closed" value="true" />
+      <created>1705573752714</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1705573752714</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -180,7 +170,9 @@
     <MESSAGE value="chore: link submodules" />
     <MESSAGE value="chore: init dispose-root&#10;chore: basic functions" />
     <MESSAGE value="chore: init dispose-root" />
-    <option name="LAST_COMMIT_MESSAGE" value="chore: init dispose-root" />
+    <MESSAGE value="feat(dispose-root): frontend notice&#10;feat(dispose-root): dispose all effects&#10;chore: migrate to yarn v4" />
+    <MESSAGE value="fix: `onclick` isn't `onClick`, btw also declared the typing too" />
+    <option name="LAST_COMMIT_MESSAGE" value="fix: `onclick` isn't `onClick`, btw also declared the typing too" />
   </component>
   <component name="VueSettings">
     <option name="innerServiceType" value="TS_SERVICE" />
