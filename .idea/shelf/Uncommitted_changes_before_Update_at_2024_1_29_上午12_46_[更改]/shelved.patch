@@ -1,0 +1,211 @@
+Index: external/koishi/plugins/server/package.json
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>{\n  \"name\": \"@koishijs/plugin-server\",\n  \"description\": \"Server service for Koishi\",\n  \"version\": \"3.1.3\",\n  \"main\": \"lib/index.js\",\n  \"module\": \"lib/index.mjs\",\n  \"typings\": \"lib/index.d.ts\",\n  \"files\": [\n    \"lib\",\n    \"src\"\n  ],\n  \"author\": \"Shigma <shigma10826@gmail.com>\",\n  \"license\": \"MIT\",\n  \"repository\": {\n    \"type\": \"git\",\n    \"url\": \"git+https://github.com/cordisjs/server.git\",\n    \"directory\": \"packages/core\"\n  },\n  \"bugs\": {\n    \"url\": \"https://github.com/satorijs/satori/issues\"\n  },\n  \"homepage\": \"https://koishi.chat/plugins/develop/server.html\",\n  \"keywords\": [\n    \"bot\",\n    \"adapter\",\n    \"protocol\",\n    \"chatbot\",\n    \"koishi\",\n    \"router\",\n    \"server\"\n  ],\n  \"koishi\": {\n    \"service\": {\n      \"implements\": [\n        \"server\"\n      ]\n    },\n    \"description\": {\n      \"en\": \"Service & Router Service\",\n      \"zh\": \"服务器与路由服务\"\n    }\n  },\n  \"peerDependencies\": {\n    \"koishi\": \"^4.16.4\"\n  },\n  \"devDependencies\": {\n    \"koishi\": \"^4.16.4\"\n  },\n  \"dependencies\": {\n    \"@cordisjs/server\": \"^0.1.3\"\n  }\n}\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/external/koishi/plugins/server/package.json b/external/koishi/plugins/server/package.json
+--- a/external/koishi/plugins/server/package.json	(revision 5eb0d97067b2acb7acef010630958fc33783aad0)
++++ b/external/koishi/plugins/server/package.json	(date 1706457137507)
+@@ -47,6 +47,6 @@
+     "koishi": "^4.16.4"
+   },
+   "dependencies": {
+-    "@cordisjs/server": "^0.1.3"
++    "@cordisjs/server": "^0.1.7"
+   }
+ }
+Index: external/koishi/package.json
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>{\n  \"name\": \"@root/koishi\",\n  \"version\": \"1.0.0\",\n  \"type\": \"module\",\n  \"private\": true,\n  \"packageManager\": \"yarn@1.22.19\",\n  \"workspaces\": [\n    \"docs\",\n    \"external/*\",\n    \"external/*/external/*\",\n    \"external/*/packages/*\",\n    \"external/upstream/adapter/*\",\n    \"external/upstream/database/*\",\n    \"external/upstream/server/*\",\n    \"packages/*\",\n    \"plugins/*\",\n    \"plugins/common/*\",\n    \"plugins/database/*\"\n  ],\n  \"scripts\": {\n    \"docs\": \"yarn workspace @koishijs/docs\",\n    \"console\": \"yarn workspace @root/console\",\n    \"dialogue\": \"yarn workspace @root/dialogue\",\n    \"minato\": \"yarn workspace @root/minato\",\n    \"satori\": \"yarn workspace @root/satori\",\n    \"yakumo\": \"yarn workspace @root/yakumo\",\n    \"clean\": \"node -r esbuild-register build/clean\",\n    \"compile\": \"yakumo esbuild\",\n    \"build\": \"yakumo esbuild && yakumo tsc\",\n    \"bump\": \"yakumo version\",\n    \"dep\": \"yakumo upgrade\",\n    \"pub\": \"yakumo publish\",\n    \"lint\": \"eslint packages plugins --ext=ts --cache\",\n    \"test\": \"yakumo mocha -r esbuild-register -r yml-register --exit\",\n    \"test:json\": \"shx rm -rf coverage && c8 -r json yarn test\",\n    \"test:html\": \"shx rm -rf coverage && c8 -r html yarn test\",\n    \"test:text\": \"shx rm -rf coverage && c8 -r text yarn test\"\n  },\n  \"license\": \"MIT\",\n  \"devDependencies\": {\n    \"@cordisjs/eslint-config\": \"^1.0.4\",\n    \"@octokit/webhooks-types\": \"^7.3.1\",\n    \"@sinonjs/fake-timers\": \"^6.0.1\",\n    \"@types/chai\": \"^4.3.11\",\n    \"@types/chai-as-promised\": \"^7.1.8\",\n    \"@types/mocha\": \"^9.1.1\",\n    \"@types/node\": \"^20.10.2\",\n    \"@types/prompts\": \"^2.4.9\",\n    \"@types/semver\": \"^7.5.6\",\n    \"@types/sinonjs__fake-timers\": \"^6.0.4\",\n    \"@types/source-map-support\": \"^0.5.10\",\n    \"c8\": \"^7.14.0\",\n    \"cac\": \"^6.7.14\",\n    \"chai\": \"^4.3.10\",\n    \"chai-as-promised\": \"^7.1.1\",\n    \"cross-env\": \"^7.0.3\",\n    \"esbuild\": \"^0.18.20\",\n    \"esbuild-register\": \"^3.5.0\",\n    \"eslint\": \"^8.55.0\",\n    \"eslint-plugin-mocha\": \"^10.2.0\",\n    \"globby\": \"^11.1.0\",\n    \"jest-mock\": \"^28.1.3\",\n    \"kleur\": \"^4.1.5\",\n    \"latest-version\": \"^5.1.0\",\n    \"mocha\": \"^9.2.2\",\n    \"ora\": \"^5.4.1\",\n    \"prompts\": \"^2.4.2\",\n    \"semver\": \"^7.5.4\",\n    \"shx\": \"^0.3.4\",\n    \"source-map-support\": \"^0.5.21\",\n    \"typescript\": \"^5.3.2\",\n    \"yakumo\": \"^1.0.0-alpha.10\",\n    \"yakumo-esbuild\": \"^1.0.0-alpha.2\",\n    \"yakumo-mocha\": \"^1.0.0-alpha.1\",\n    \"yakumo-publish-sync\": \"^1.0.0-alpha.1\",\n    \"yakumo-tsc\": \"^1.0.0-alpha.2\",\n    \"yml-register\": \"^1.1.0\"\n  }\n}\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/external/koishi/package.json b/external/koishi/package.json
+--- a/external/koishi/package.json	(revision 5eb0d97067b2acb7acef010630958fc33783aad0)
++++ b/external/koishi/package.json	(date 1706457137505)
+@@ -44,19 +44,19 @@
+     "@types/chai": "^4.3.11",
+     "@types/chai-as-promised": "^7.1.8",
+     "@types/mocha": "^9.1.1",
+-    "@types/node": "^20.10.2",
++    "@types/node": "^20.11.9",
+     "@types/prompts": "^2.4.9",
+     "@types/semver": "^7.5.6",
+     "@types/sinonjs__fake-timers": "^6.0.4",
+     "@types/source-map-support": "^0.5.10",
+     "c8": "^7.14.0",
+     "cac": "^6.7.14",
+-    "chai": "^4.3.10",
++    "chai": "^4.4.1",
+     "chai-as-promised": "^7.1.1",
+     "cross-env": "^7.0.3",
+     "esbuild": "^0.18.20",
+     "esbuild-register": "^3.5.0",
+-    "eslint": "^8.55.0",
++    "eslint": "^8.56.0",
+     "eslint-plugin-mocha": "^10.2.0",
+     "globby": "^11.1.0",
+     "jest-mock": "^28.1.3",
+@@ -68,12 +68,12 @@
+     "semver": "^7.5.4",
+     "shx": "^0.3.4",
+     "source-map-support": "^0.5.21",
+-    "typescript": "^5.3.2",
+-    "yakumo": "^1.0.0-alpha.10",
+-    "yakumo-esbuild": "^1.0.0-alpha.2",
+-    "yakumo-mocha": "^1.0.0-alpha.1",
++    "typescript": "^5.3.3",
++    "yakumo": "^1.0.0-beta.2",
++    "yakumo-esbuild": "^1.0.0-beta.2",
++    "yakumo-mocha": "^1.0.0-beta.2",
+     "yakumo-publish-sync": "^1.0.0-alpha.1",
+-    "yakumo-tsc": "^1.0.0-alpha.2",
++    "yakumo-tsc": "^1.0.0-beta.0",
+     "yml-register": "^1.1.0"
+   }
+ }
+Index: external/koishi/packages/koishi/package.json
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>{\n  \"name\": \"koishi\",\n  \"description\": \"Cross-Platform Chatbot Framework Made with Love\",\n  \"version\": \"4.16.4\",\n  \"main\": \"lib/index.cjs\",\n  \"module\": \"lib/index.mjs\",\n  \"types\": \"lib/index.d.ts\",\n  \"bin\": \"bin.js\",\n  \"exports\": {\n    \".\": {\n      \"node\": {\n        \"import\": \"./lib/index.mjs\",\n        \"require\": \"./lib/index.cjs\"\n      },\n      \"browser\": \"./browser.mjs\",\n      \"types\": \"./lib/index.d.ts\"\n    },\n    \"./lib/cli\": \"./lib/cli/index.js\",\n    \"./lib/worker\": \"./lib/worker/index.js\",\n    \"./package.json\": \"./package.json\"\n  },\n  \"files\": [\n    \"lib\",\n    \"src\",\n    \"bin.js\",\n    \"browser.mjs\"\n  ],\n  \"author\": \"Shigma <shigma10826@gmail.com>\",\n  \"license\": \"MIT\",\n  \"repository\": {\n    \"type\": \"git\",\n    \"url\": \"git+https://github.com/koishijs/koishi.git\"\n  },\n  \"bugs\": {\n    \"url\": \"https://github.com/koishijs/koishi/issues\"\n  },\n  \"homepage\": \"https://koishi.chat\",\n  \"keywords\": [\n    \"bot\",\n    \"chatbot\",\n    \"discord\",\n    \"telegram\",\n    \"koishi\",\n    \"framework\"\n  ],\n  \"dependencies\": {\n    \"@koishijs/core\": \"4.16.4\",\n    \"@koishijs/loader\": \"4.3.4\",\n    \"@koishijs/plugin-server\": \"^3.1.3\",\n    \"@koishijs/utils\": \"^7.1.2\",\n    \"@satorijs/satori\": \"^3.4.1\",\n    \"cac\": \"^6.7.14\",\n    \"kleur\": \"^4.1.5\"\n  },\n  \"yakumo\": {\n    \"tsc\": {\n      \"ignore\": [\n        \"@koishijs/plugin-server\"\n      ]\n    }\n  }\n}\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/external/koishi/packages/koishi/package.json b/external/koishi/packages/koishi/package.json
+--- a/external/koishi/packages/koishi/package.json	(revision 5eb0d97067b2acb7acef010630958fc33783aad0)
++++ b/external/koishi/packages/koishi/package.json	(date 1706457137506)
+@@ -48,7 +48,7 @@
+     "@koishijs/loader": "4.3.4",
+     "@koishijs/plugin-server": "^3.1.3",
+     "@koishijs/utils": "^7.1.2",
+-    "@satorijs/satori": "^3.4.1",
++    "@satorijs/satori": "^3.4.5",
+     "cac": "^6.7.14",
+     "kleur": "^4.1.5"
+   },
+Index: external/koishi/packages/core/tests/runtime.spec.ts
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>import { App, User, Channel, Command, sleep } from 'koishi'\nimport mock, { DEFAULT_SELF_ID } from '@koishijs/plugin-mock'\nimport memory from '@koishijs/plugin-database-memory'\nimport { install } from '@sinonjs/fake-timers'\n\nconst app = new App()\n\napp.plugin(memory)\napp.plugin(mock)\n\n// make coverage happy\nCommand.channelFields([])\n\nconst client1 = app.mock.client('123')\nconst client2 = app.mock.client('456')\nconst client3 = app.mock.client('789')\nconst client4 = app.mock.client('123', '321')\nconst client5 = app.mock.client('123', '654')\n\nconst cmd1 = app.command('cmd1 <arg1>', { authority: 2 })\n  .channelFields(['id'])\n  .shortcut('foo1', { args: ['bar'] })\n  .shortcut('foo4', { fuzzy: true })\n  .option('bar', '', { authority: 3 })\n  .option('baz', '')\n  .action(({}, arg) => 'cmd1:' + arg)\n\nconst cmd2 = app.command('cmd2')\n  .userFields(['id'])\n  .shortcut('foo2', { options: { text: 'bar' } })\n  .shortcut('foo3', { prefix: true, fuzzy: true })\n  .option('bar', '', { authority: 3 })\n  .option('baz', '')\n  .action(({ session }) => 'cmd2:' + session.userId)\n\napp.middleware((session, next) => {\n  if (session.content.includes('escape')) return 'early'\n  return next()\n})\n\nbefore(async () => {\n  await app.start()\n  await app.mock.initUser('123', 2)\n  await app.mock.initUser('456', 1)\n  await app.mock.initUser('789', 1)\n  await app.database.setUser('mock', '789', { flag: User.Flag.ignore })\n  await app.mock.initChannel('321')\n  await app.mock.initChannel('654', '999')\n})\n\nafter(() => app.stop())\n\ndescribe('Runtime', () => {\n  describe('Command Prefix', () => {\n    it('single prefix', async () => {\n      // also support functions\n      app.config.prefix = () => '>'\n\n      await client1.shouldReply('cmd2', 'cmd2:123')\n      await client4.shouldNotReply('cmd2')\n      await client1.shouldReply('&gt;cmd2', 'cmd2:123')\n      await client4.shouldReply('&gt;cmd2', 'cmd2:123')\n      await client1.shouldNotReply('.cmd2')\n      await client4.shouldNotReply('.cmd2')\n    })\n\n    it('multiple prefixes', async () => {\n      app.config.prefix = ['!', '.']\n\n      await client1.shouldReply('cmd2', 'cmd2:123')\n      await client4.shouldNotReply('cmd2')\n      await client1.shouldReply('!cmd2', 'cmd2:123')\n      await client4.shouldReply('!cmd2', 'cmd2:123')\n      await client1.shouldReply('.cmd2', 'cmd2:123')\n      await client4.shouldReply('.cmd2', 'cmd2:123')\n    })\n\n    it('optional prefix', async () => {\n      app.config.prefix = ['', '.']\n\n      await client1.shouldReply('cmd2', 'cmd2:123')\n      await client4.shouldReply('cmd2', 'cmd2:123')\n      await client1.shouldNotReply('!cmd2')\n      await client4.shouldNotReply('!cmd2')\n      await client1.shouldReply('.cmd2', 'cmd2:123')\n      await client4.shouldReply('.cmd2', 'cmd2:123')\n    })\n\n    it('no prefix', async () => {\n      app.config.prefix = null\n\n      await client1.shouldReply('cmd2', 'cmd2:123')\n      await client4.shouldReply('cmd2', 'cmd2:123')\n      await client1.shouldNotReply('!cmd2')\n      await client4.shouldNotReply('!cmd2')\n      await client1.shouldNotReply('.cmd2')\n      await client4.shouldNotReply('.cmd2')\n    })\n  })\n\n  describe('Nickname Prefix', () => {\n    before(() => {\n      app.config.prefix = ['-']\n    })\n\n    after(() => {\n      app.config.prefix = null\n    })\n\n    it('no nickname', async () => {\n      await client1.shouldReply('cmd2', 'cmd2:123')\n      await client4.shouldNotReply('cmd2')\n      await client1.shouldReply('-cmd2', 'cmd2:123')\n      await client4.shouldReply('-cmd2', 'cmd2:123')\n      await client4.shouldReply('<at id=\"514\"/> <at id=\"999\"/> cmd2', 'cmd2:123')\n      await client4.shouldReply('<at id=\"999\"/> <at id=\"514\"/> cmd2', 'cmd2:123')\n      await client4.shouldNotReply('<at id=\"999\"/> cmd2')\n      await client4.shouldNotReply(`<quote id=\"123\"/> cmd2`)\n      await client4.shouldNotReply(`<quote id=\"123\"/> <at id=\"999\"/> cmd2`)\n      await client4.shouldReply('<quote id=\"123\"/> <at id=\"514\"/> cmd2', 'cmd2:123')\n    })\n\n    it('single nickname', async () => {\n      app.config.nickname = ['koishi']\n\n      await client1.shouldReply('koishi, cmd2', 'cmd2:123')\n      await client4.shouldReply('koishi, cmd2', 'cmd2:123')\n      await client1.shouldReply('koishi\\n cmd2', 'cmd2:123')\n      await client4.shouldReply('koishi\\n cmd2', 'cmd2:123')\n      await client1.shouldReply('@koishi cmd2', 'cmd2:123')\n      await client4.shouldReply('@koishi cmd2', 'cmd2:123')\n      await client1.shouldNotReply('komeiji, cmd2')\n      await client4.shouldNotReply('komeiji, cmd2')\n    })\n\n    it('multiple nicknames', async () => {\n      app.config.nickname = ['komeiji', 'koishi']\n\n      await client1.shouldReply('cmd2', 'cmd2:123')\n      await client4.shouldNotReply('cmd2')\n      await client1.shouldReply('-cmd2', 'cmd2:123')\n      await client4.shouldReply('-cmd2', 'cmd2:123')\n      await client1.shouldReply('koishi, cmd2', 'cmd2:123')\n      await client4.shouldReply('koishi, cmd2', 'cmd2:123')\n      await client1.shouldReply('komeiji cmd2', 'cmd2:123')\n      await client4.shouldReply('komeiji cmd2', 'cmd2:123')\n    })\n  })\n\n  describe('Shortcuts', () => {\n    before(() => {\n      app.config.prefix = ['#']\n    })\n\n    after(() => {\n      app.config.prefix = null\n    })\n\n    it('single shortcut', async () => {\n      await client4.shouldReply(' foo1 ', 'cmd1:bar')\n      await client4.shouldReply(' foo2 ', 'cmd2:123')\n      await client4.shouldNotReply('foo1 bar')\n      await client4.shouldNotReply('foo2 -t bar')\n    })\n\n    it('no command prefix', async () => {\n      await client4.shouldNotReply('#foo1')\n      await client4.shouldNotReply('#foo2')\n    })\n\n    it('nickname prefix & fuzzy', async () => {\n      await client4.shouldNotReply('foo3 -t baz')\n      await client4.shouldReply(`<at id=\"${DEFAULT_SELF_ID}\"/> foo3 -t baz`, 'cmd2:123')\n    })\n\n    it('one argument & fuzzy', async () => {\n      await client4.shouldReply('foo4 bar baz', 'cmd1:bar')\n      await client4.shouldNotReply('foo4bar baz')\n      await client4.shouldReply(`<at id=\"${DEFAULT_SELF_ID}\"/> foo4bar baz`, 'cmd1:bar')\n    })\n  })\n\n  describe('Middleware Validation', () => {\n    it('user.flag.ignore', async () => {\n      await client1.shouldReply('cmd2', 'cmd2:123')\n      await client3.shouldNotReply('cmd2')\n    })\n\n    it('channel.assignee', async () => {\n      await client4.shouldReply('cmd1 test --baz', 'cmd1:test')\n      await client4.shouldReply('escape', 'early')\n      await client5.shouldNotReply('cmd1 test --baz')\n      await client5.shouldReply(`<at id=\"${DEFAULT_SELF_ID}\"/> cmd1 test --baz`, 'cmd1:test')\n    })\n\n    it('channel.flag.ignore', async () => {\n      await app.database.setChannel('mock', '321', { flag: Channel.Flag.ignore })\n      await sleep(0)\n      await client4.shouldNotReply('escape')\n      await client4.shouldNotReply('cmd1 --baz')\n      await client4.shouldNotReply(`<at id=\"${DEFAULT_SELF_ID}\"/> cmd1 --baz`)\n      await app.database.setChannel('mock', '321', { flag: 0 })\n    })\n  })\n\n  describe('Command Validation', () => {\n    it('check authority', async () => {\n      app.command('cmd1', { showWarning: true })\n      await client2.shouldReply('cmd1 test', '权限不足。')\n      await client1.shouldReply('cmd1 test', 'cmd1:test')\n      await client1.shouldReply('cmd1 --bar', '权限不足。')\n      app.command('cmd1', { showWarning: false })\n      await client1.shouldNotReply('cmd1 --bar')\n      const cmd3 = app.command('cmd1/cmd3').action(() => 'after cmd3')\n      await client2.shouldReply('cmd3', '权限不足。')\n      await client1.shouldReply('cmd3', 'after cmd3')\n      cmd3.dispose()\n    })\n\n    it('check arg count', async () => {\n      cmd1.config.checkArgCount = true\n      cmd1.config.showWarning = true\n      await client4.shouldReply('cmd1 foo', 'cmd1:foo')\n      await client4.shouldReply('cmd1', '请发送arg1。')\n      await client4.shouldReply('bar baz', 'cmd1:bar baz')\n      await client4.shouldReply('cmd1 foo bar', '存在多余参数，输入帮助以查看用法。')\n      cmd1.config.showWarning = false\n      cmd1.config.checkArgCount = false\n    })\n\n    it('check arg count: timeout', async () => {\n      const clock = install()\n      cmd1.config.checkArgCount = true\n      cmd1.config.showWarning = true\n      await client4.shouldReply('cmd1', '请发送arg1。')\n      await clock.runAllAsync()\n      await client4.shouldReply('', '缺少参数，输入帮助以查看用法。')\n      cmd1.config.showWarning = false\n      cmd1.config.checkArgCount = false\n      clock.uninstall()\n    })\n\n    it('check unknown option', async () => {\n      cmd2.config.checkUnknown = true\n      cmd2.config.showWarning = true\n      await client2.shouldReply('cmd2', 'cmd2:456')\n      await client2.shouldReply('cmd2 --foo', '存在未知选项 foo，输入帮助以查看用法。')\n      cmd2.config.showWarning = false\n      await client2.shouldNotReply('cmd2 --foo')\n      cmd2.config.checkUnknown = false\n    })\n\n    it('option.validate', async () => {\n      const cmd3 = app.command('cmd3').action(() => 'after cmd3')\n      cmd3.option('foo', '<foo>', { type: () => { throw new Error() } })\n      cmd3.option('bar', '<bar>', { type: () => { throw new Error('SUFFIX') } })\n      cmd3.option('baz', '<baz>', { type: /$^/ })\n      cmd3.option('bax', '<baz>', { type: ['abc', 'def'] })\n      await client1.shouldReply('cmd3', 'after cmd3')\n      await client1.shouldReply('cmd3 --foo xxx', '选项 foo 输入无效，输入帮助以查看用法。')\n      await client1.shouldReply('cmd3 --bar xxx', '选项 bar 输入无效，SUFFIX')\n      await client1.shouldReply('cmd3 --baz xxx', '选项 baz 输入无效，输入帮助以查看用法。')\n      await client1.shouldReply('cmd3 --bax cba', '选项 bax 输入无效，输入帮助以查看用法。')\n      cmd3.dispose()\n    })\n\n    it('command.before()', async () => {\n      const cmd3 = app.command('cmd3').action(() => 'after cmd3')\n      await client1.shouldReply('cmd3', 'after cmd3')\n      let value = 'before cmd3'\n      cmd3.before(() => value)\n      await client1.shouldReply('cmd3', 'before cmd3')\n      value = ''\n      await client1.shouldNotReply('cmd3')\n      cmd3.dispose()\n    })\n  })\n})\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/external/koishi/packages/core/tests/runtime.spec.ts b/external/koishi/packages/core/tests/runtime.spec.ts
+--- a/external/koishi/packages/core/tests/runtime.spec.ts	(revision 5eb0d97067b2acb7acef010630958fc33783aad0)
++++ b/external/koishi/packages/core/tests/runtime.spec.ts	(date 1706447943343)
+@@ -54,7 +54,7 @@
+   describe('Command Prefix', () => {
+     it('single prefix', async () => {
+       // also support functions
+-      app.config.prefix = () => '>'
++      app.config.addPrefix = () => '>'
+ 
+       await client1.shouldReply('cmd2', 'cmd2:123')
+       await client4.shouldNotReply('cmd2')
+@@ -65,7 +65,7 @@
+     })
+ 
+     it('multiple prefixes', async () => {
+-      app.config.prefix = ['!', '.']
++      app.config.addPrefix = ['!', '.']
+ 
+       await client1.shouldReply('cmd2', 'cmd2:123')
+       await client4.shouldNotReply('cmd2')
+@@ -76,7 +76,7 @@
+     })
+ 
+     it('optional prefix', async () => {
+-      app.config.prefix = ['', '.']
++      app.config.addPrefix = ['', '.']
+ 
+       await client1.shouldReply('cmd2', 'cmd2:123')
+       await client4.shouldReply('cmd2', 'cmd2:123')
+@@ -87,7 +87,7 @@
+     })
+ 
+     it('no prefix', async () => {
+-      app.config.prefix = null
++      app.config.addPrefix = null
+ 
+       await client1.shouldReply('cmd2', 'cmd2:123')
+       await client4.shouldReply('cmd2', 'cmd2:123')
+@@ -100,11 +100,11 @@
+ 
+   describe('Nickname Prefix', () => {
+     before(() => {
+-      app.config.prefix = ['-']
++      app.config.addPrefix = ['-']
+     })
+ 
+     after(() => {
+-      app.config.prefix = null
++      app.config.addPrefix = null
+     })
+ 
+     it('no nickname', async () => {
+@@ -149,11 +149,11 @@
+ 
+   describe('Shortcuts', () => {
+     before(() => {
+-      app.config.prefix = ['#']
++      app.config.addPrefix = ['#']
+     })
+ 
+     after(() => {
+-      app.config.prefix = null
++      app.config.addPrefix = null
+     })
+ 
+     it('single shortcut', async () => {
+Index: external/koishi/packages/loader/package.json
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>{\n  \"name\": \"@koishijs/loader\",\n  \"description\": \"Config Loader for Koishi\",\n  \"version\": \"4.3.4\",\n  \"main\": \"lib/index.js\",\n  \"module\": \"lib/shared.mjs\",\n  \"types\": \"lib/index.d.ts\",\n  \"exports\": {\n    \".\": {\n      \"require\": \"./lib/index.js\",\n      \"import\": \"./lib/shared.mjs\",\n      \"types\": \"./lib/index.d.ts\"\n    },\n    \"./shared\": {\n      \"require\": \"./lib/shared.js\",\n      \"import\": \"./lib/shared.mjs\"\n    },\n    \"./src/*\": \"./src/*\",\n    \"./package.json\": \"./package.json\"\n  },\n  \"files\": [\n    \"lib\",\n    \"src\"\n  ],\n  \"author\": \"Shigma <shigma10826@gmail.com>\",\n  \"license\": \"MIT\",\n  \"repository\": {\n    \"type\": \"git\",\n    \"url\": \"git+https://github.com/koishijs/koishi.git\",\n    \"directory\": \"packages/loader\"\n  },\n  \"bugs\": {\n    \"url\": \"https://github.com/koishijs/koishi/issues\"\n  },\n  \"homepage\": \"https://koishi.chat/api/utils.html\",\n  \"keywords\": [\n    \"bot\",\n    \"chatbot\",\n    \"koishi\",\n    \"loader\",\n    \"config\"\n  ],\n  \"peerDependencies\": {\n    \"@koishijs/core\": \"4.16.4\"\n  },\n  \"devDependencies\": {\n    \"@koishijs/core\": \"4.16.4\",\n    \"@types/js-yaml\": \"^4.0.9\"\n  },\n  \"dependencies\": {\n    \"dotenv\": \"^16.3.1\",\n    \"js-yaml\": \"^4.1.0\",\n    \"ns-require\": \"^1.1.4\"\n  }\n}\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/external/koishi/packages/loader/package.json b/external/koishi/packages/loader/package.json
+--- a/external/koishi/packages/loader/package.json	(revision 5eb0d97067b2acb7acef010630958fc33783aad0)
++++ b/external/koishi/packages/loader/package.json	(date 1706457137506)
+@@ -48,7 +48,7 @@
+     "@types/js-yaml": "^4.0.9"
+   },
+   "dependencies": {
+-    "dotenv": "^16.3.1",
++    "dotenv": "^16.4.1",
+     "js-yaml": "^4.1.0",
+     "ns-require": "^1.1.4"
+   }
+Index: external/koishi/packages/core/package.json
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>{\n  \"name\": \"@koishijs/core\",\n  \"description\": \"Core Features for Koishi\",\n  \"version\": \"4.16.4\",\n  \"main\": \"lib/index.cjs\",\n  \"module\": \"lib/index.mjs\",\n  \"typings\": \"lib/index.d.ts\",\n  \"files\": [\n    \"lib\",\n    \"src\"\n  ],\n  \"author\": \"Shigma <shigma10826@gmail.com>\",\n  \"license\": \"MIT\",\n  \"repository\": {\n    \"type\": \"git\",\n    \"url\": \"git+https://github.com/koishijs/koishi.git\",\n    \"directory\": \"packages/core\"\n  },\n  \"bugs\": {\n    \"url\": \"https://github.com/koishijs/koishi/issues\"\n  },\n  \"homepage\": \"https://koishi.chat\",\n  \"keywords\": [\n    \"bot\",\n    \"chatbot\",\n    \"koishi\"\n  ],\n  \"devDependencies\": {\n    \"chai\": \"^4.3.10\",\n    \"chai-as-promised\": \"^7.1.1\",\n    \"chai-shape\": \"^1.0.0\"\n  },\n  \"dependencies\": {\n    \"@koishijs/i18n-utils\": \"^1.0.0\",\n    \"@koishijs/utils\": \"^7.1.2\",\n    \"@minatojs/core\": \"^2.8.1\",\n    \"@satorijs/core\": \"^3.4.1\",\n    \"cordis\": \"^3.6.0\",\n    \"cosmokit\": \"^1.5.2\",\n    \"fastest-levenshtein\": \"^1.0.16\"\n  }\n}\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/external/koishi/packages/core/package.json b/external/koishi/packages/core/package.json
+--- a/external/koishi/packages/core/package.json	(revision 5eb0d97067b2acb7acef010630958fc33783aad0)
++++ b/external/koishi/packages/core/package.json	(date 1706457137506)
+@@ -26,7 +26,7 @@
+     "koishi"
+   ],
+   "devDependencies": {
+-    "chai": "^4.3.10",
++    "chai": "^4.4.1",
+     "chai-as-promised": "^7.1.1",
+     "chai-shape": "^1.0.0"
+   },
+@@ -34,8 +34,8 @@
+     "@koishijs/i18n-utils": "^1.0.0",
+     "@koishijs/utils": "^7.1.2",
+     "@minatojs/core": "^2.8.1",
+-    "@satorijs/core": "^3.4.1",
+-    "cordis": "^3.6.0",
++    "@satorijs/core": "^3.4.5",
++    "cordis": "^3.6.1",
+     "cosmokit": "^1.5.2",
+     "fastest-levenshtein": "^1.0.16"
+   }

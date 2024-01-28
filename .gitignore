@@ -3,6 +3,9 @@ dist
 /cache
 /data
 /temp
+/.hack
+/tmp
+/external/test
 
 .env.local
 

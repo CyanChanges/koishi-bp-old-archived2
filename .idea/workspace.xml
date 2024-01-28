@@ -4,8 +4,20 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1ffaa66b-b780-4984-b3d8-cb0d7cf1e4b5" name="更改" comment="chore: update submodules">
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+    <list default="true" id="1ffaa66b-b780-4984-b3d8-cb0d7cf1e4b5" name="更改" comment="chore: init expose-ctx&#10;chore: update">
+      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2024_1_29_12_46___.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2024_1_29_上午12_46_[更改]/shelved.patch" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/shelf/_2024_1_18_7_17____.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/shelf/在进行更新之前于_2024_1_18_下午7_17_取消提交了更改_[更改]/shelved.patch" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/shelf/在进行更新之前于_2024_1_18_下午7_17_取消提交了更改_[更改]1/shelved.patch" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bwrap.sh" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hack.tar.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tmp/koishi-env" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tmp/youareanidiot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -22,6 +34,14 @@
       </list>
     </option>
   </component>
+  <component name="Git.Rebase.Settings">
+    <option name="NEW_BASE" value="a592ff94843f852129d263e53481c5b84eb2e6e7" />
+    <option name="OPTIONS">
+      <set>
+        <option value="INTERACTIVE" />
+      </set>
+    </option>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
@@ -29,9 +49,8 @@
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
-    <option name="RESET_MODE" value="HARD" />
+    <option name="RESET_MODE" value="SOFT" />
     <option name="ROOT_SYNC" value="DONT_SYNC" />
-    <option name="UPDATE_TYPE" value="REBASE" />
   </component>
   <component name="LLMProjectSettings">
     <option name="turned_on" value="false" />
@@ -145,7 +164,7 @@
       <workItem from="1705677808976" duration="2517000" />
       <workItem from="1705680340181" duration="5739000" />
       <workItem from="1705828578368" duration="331000" />
-      <workItem from="1706442691838" duration="17773000" />
+      <workItem from="1706442691838" duration="18229000" />
     </task>
     <task id="LOCAL-00001" summary="chore: init dispose-root&#10;chore: update boilerplate&#10;chore: remove koishi sources">
       <option name="closed" value="true" />
@@ -227,7 +246,23 @@
       <option name="project" value="LOCAL" />
       <updated>1706461179025</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="chore: init expose-ctx&#10;chore: update">
+      <option name="closed" value="true" />
+      <created>1706461427093</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1706461427093</updated>
+    </task>
+    <task id="LOCAL-00012" summary="chore: init expose-ctx&#10;chore: update">
+      <option name="closed" value="true" />
+      <created>1706461527021</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1706461527021</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -251,7 +286,7 @@
                   <entry key="branch">
                     <value>
                       <list>
-                        <option value="master" />
+                        <option value="main" />
                       </list>
                     </value>
                   </entry>
@@ -272,10 +307,10 @@
     <MESSAGE value="feat(dispose-root): frontend notice&#10;feat(dispose-root): dispose all effects&#10;chore: migrate to yarn v4" />
     <MESSAGE value="fix: `onclick` isn't `onClick`, btw also declared the typing too" />
     <MESSAGE value="update" />
-    <MESSAGE value="chore: init expose-ctx&#10;chore: update" />
     <MESSAGE value="chore: move koishi-env" />
     <MESSAGE value="chore: update submodules" />
-    <option name="LAST_COMMIT_MESSAGE" value="chore: update submodules" />
+    <MESSAGE value="chore: init expose-ctx&#10;chore: update" />
+    <option name="LAST_COMMIT_MESSAGE" value="chore: init expose-ctx&#10;chore: update" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
