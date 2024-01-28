@@ -1,3 +1,20 @@
-[submodule "plugins/dispose-root"]
-	path = plugins/dispose-root
-	url = https://github.com/CyanChanges/koishi-plugin-dispose-root
+[submodule "external/dispose-root"]
+	path = external/dispose-root
+	url = https://github.com/CyanChanges/koishi-plugin-dispose-root.git
+
+[submodule "external/expose-ctx"]
+  path = external/expose-ctx
+  url = https://github.com/CyanChanges/koishi-plugin-expose-ctx.git
+
+[submodule "external/koishi"]
+  path = external/koishi
+  url = https://github.com/koishijs/koishi.git
+
+[submodule "external/webui"]
+  path = external/webui
+  url = https://github.com/koishijs/webui.git
+
+[submodule "external/ponyfills"]
+  path = external/ponyfills
+  url = https://github.com/koishijs/ponyfills.git
+
