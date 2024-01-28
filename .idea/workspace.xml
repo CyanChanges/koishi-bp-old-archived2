@@ -4,14 +4,50 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1ffaa66b-b780-4984-b3d8-cb0d7cf1e4b5" name="更改" comment="fix: `onclick` isn't `onClick`, btw also declared the typing too">
+    <list default="true" id="1ffaa66b-b780-4984-b3d8-cb0d7cf1e4b5" name="更改" comment="chore: init expose-ctx&#10;chore: update">
+      <change afterPath="$PROJECT_DIR$/external/dispose-root/client/music.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/external/expose-ctx/client/consts.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/external/expose-ctx/client/exposer.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/external/expose-ctx/client/locales/page.en-US.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/external/expose-ctx/client/locales/page.zh-CN.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/external/expose-ctx/client/utils.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/external/expose-ctx/src/consts.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/external/expose-ctx/src/exposer.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/koishi-bp.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/koishi-bp.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.yarnrc.yml" beforeDir="false" afterPath="$PROJECT_DIR$/.yarnrc.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/external/dispose-root" beforeDir="false" afterPath="$PROJECT_DIR$/external/dispose-root" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/external/dispose-root/client/DisposedNotice.vue" beforeDir="false" afterPath="$PROJECT_DIR$/external/dispose-root/client/DisposedNotice.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/external/dispose-root/client/handler.ts" beforeDir="false" afterPath="$PROJECT_DIR$/external/dispose-root/client/handler.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/external/dispose-root/client/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/external/dispose-root/client/index.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/external/dispose-root/client/receiver.ts" beforeDir="false" afterPath="$PROJECT_DIR$/external/dispose-root/client/receiver.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/external/dispose-root/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/external/dispose-root/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/external/dispose-root/src/disposer.ts" beforeDir="false" afterPath="$PROJECT_DIR$/external/dispose-root/src/disposer.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/external/dispose-root/src/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/external/dispose-root/src/index.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/external/dispose-root/src/notifier.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/external/dispose-root/src/notifier.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/external/dispose-root/src/utils.ts" beforeDir="false" afterPath="$PROJECT_DIR$/external/dispose-root/src/utils.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/external/expose-ctx/client/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/external/expose-ctx/client/index.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/external/expose-ctx/client/page.vue" beforeDir="false" afterPath="$PROJECT_DIR$/external/expose-ctx/client/page.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/external/expose-ctx/client/tsconfig.json" beforeDir="false" afterPath="$PROJECT_DIR$/external/expose-ctx/client/tsconfig.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/external/expose-ctx/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/external/expose-ctx/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/external/expose-ctx/src/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/external/expose-ctx/src/index.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/external/expose-ctx/tsconfig.json" beforeDir="false" afterPath="$PROJECT_DIR$/external/expose-ctx/tsconfig.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/external/koishi" beforeDir="false" afterPath="$PROJECT_DIR$/external/koishi" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/external/koishi-env" beforeDir="false" afterPath="$PROJECT_DIR$/external/koishi-env" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/external/koishi-env/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/external/koishi-env/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/external/koishi-env/tsconfig.json" beforeDir="false" afterPath="$PROJECT_DIR$/external/koishi-env/tsconfig.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/external/koishi/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/external/koishi/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/external/koishi/packages/core/tests/runtime.spec.ts" beforeDir="false" afterPath="$PROJECT_DIR$/external/koishi/packages/core/tests/runtime.spec.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/external/koishi/packages/loader/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/external/koishi/packages/loader/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/external/random-source-selector" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/external/test" beforeDir="false" afterPath="$PROJECT_DIR$/external/test" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/external/test/src/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/external/test/src/index.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/koishi.yml" beforeDir="false" afterPath="$PROJECT_DIR$/koishi.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tsconfig.json" beforeDir="false" afterPath="$PROJECT_DIR$/tsconfig.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tsconfig.temp.json" beforeDir="false" afterPath="$PROJECT_DIR$/tsconfig.temp.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yakumo.yml" beforeDir="false" afterPath="$PROJECT_DIR$/yakumo.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -21,15 +57,20 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="Vue Composition API Component" />
         <option value="JavaScript File" />
         <option value="tsconfig.json" />
-        <option value="Vue Composition API Component" />
         <option value="TypeScript File" />
       </list>
     </option>
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/external/dispose-root" />
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$/external/random-source-selector" value="master" />
+      </map>
+    </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/external/expose-ctx" />
     <option name="ROOT_SYNC" value="DONT_SYNC" />
   </component>
   <component name="LLMProjectSettings">
@@ -47,41 +88,53 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/sdcard/Projects/WebstormProjects/koishi&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_interpreter_path&quot;: &quot;node&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;yarn&quot;,
-    &quot;npm.dev.executor&quot;: &quot;Run&quot;,
-    &quot;run.code.analysis.last.selected.profile&quot;: &quot;pProject Default&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;settings.typescriptcompiler&quot;,
-    &quot;ts.external.directory.path&quot;: &quot;/sdcard/Projects/WebstormProjects/koishi-bp/node_modules/typescript/lib&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
+    "Node.js.thmr.mjs.executor": "Run",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "main",
+    "javascript.nodejs.core.library.configured.version": "21.6.1",
+    "javascript.nodejs.core.library.typings.version": "20.11.9",
+    "last_opened_file_path": "/sdcard/Projects/WebstormProjects/koishi-bp/external/expose-ctx/src",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_interpreter_path": "node",
+    "nodejs_package_manager_path": "yarn",
+    "npm.dev.executor": "Run",
+    "run.code.analysis.last.selected.profile": "pProject Default",
+    "settings.editor.selected.configurable": "settings.javascript.linters.tslint",
+    "ts.external.directory.path": "/sdcard/Projects/WebstormProjects/koishi-bp/node_modules/typescript/lib",
+    "vue.rearranger.settings.migration": "true"
   },
-  &quot;keyToStringList&quot;: {
-    &quot;vue.recent.templates&quot;: [
-      &quot;Vue Composition API Component&quot;
+  "keyToStringList": {
+    "vue.recent.templates": [
+      "Vue Composition API Component"
     ]
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/external/expose-ctx/src" />
+      <recent name="$PROJECT_DIR$/external/expose-ctx/client" />
+      <recent name="$PROJECT_DIR$/external/youareanidiot/src" />
+      <recent name="$PROJECT_DIR$/external/youareanidiot/src/node" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/tmp" />
+      <recent name="$PROJECT_DIR$/external/expose-ctx/client/locales" />
+      <recent name="$PROJECT_DIR$/test" />
+      <recent name="$PROJECT_DIR$/external/youareanidiot/src" />
       <recent name="$PROJECT_DIR$/external" />
-      <recent name="$PROJECT_DIR$/plugins" />
-      <recent name="$PROJECT_DIR$/external/is-kon/src/node" />
-      <recent name="$PROJECT_DIR$/external/is-kon/src" />
-      <recent name="$PROJECT_DIR$/external/is-kon/shared" />
     </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="npm.dev">
+    <configuration name="thmr.mjs" type="NodeJSConfigurationType" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/.hack/thmr.mjs" working-dir="$PROJECT_DIR$">
+      <method v="2" />
+    </configuration>
     <configuration name="dev" type="js.build_tools.npm">
       <package-json value="$PROJECT_DIR$/package.json" />
       <command value="run" />
@@ -96,6 +149,17 @@
       </envs>
       <method v="2" />
     </configuration>
+    <list>
+      <item itemvalue="Node.js.thmr.mjs" />
+      <item itemvalue="npm.dev" />
+    </list>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-js-predefined-1d06a55b98c1-fd6de256fdba-JavaScript-WS-241.8102.134" />
+      </set>
+    </attachedChunks>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="应用程序级" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -116,6 +180,12 @@
       <workItem from="1705553960888" duration="19002000" />
       <workItem from="1705573110303" duration="331000" />
       <workItem from="1705573449018" duration="2499000" />
+      <workItem from="1705642362933" duration="88000" />
+      <workItem from="1705648094366" duration="18658000" />
+      <workItem from="1705677808976" duration="2517000" />
+      <workItem from="1705680340181" duration="5739000" />
+      <workItem from="1705828578368" duration="331000" />
+      <workItem from="1706442691838" duration="17032000" />
     </task>
     <task id="LOCAL-00001" summary="chore: init dispose-root&#10;chore: update boilerplate&#10;chore: remove koishi sources">
       <option name="closed" value="true" />
@@ -149,7 +219,15 @@
       <option name="project" value="LOCAL" />
       <updated>1705573752714</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="update">
+      <option name="closed" value="true" />
+      <created>1705594410498</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1705594410498</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -174,49 +252,28 @@
     <MESSAGE value="chore: init dispose-root" />
     <MESSAGE value="feat(dispose-root): frontend notice&#10;feat(dispose-root): dispose all effects&#10;chore: migrate to yarn v4" />
     <MESSAGE value="fix: `onclick` isn't `onClick`, btw also declared the typing too" />
-    <option name="LAST_COMMIT_MESSAGE" value="fix: `onclick` isn't `onClick`, btw also declared the typing too" />
-  </component>
-  <component name="VueSettings">
-    <option name="innerServiceType" value="TS_SERVICE" />
+    <MESSAGE value="update" />
+    <MESSAGE value="chore: init expose-ctx&#10;chore: update" />
+    <option name="LAST_COMMIT_MESSAGE" value="chore: init expose-ctx&#10;chore: update" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
-        <line-breakpoint enabled="true" type="javascript">
+        <line-breakpoint type="javascript">
           <condition expression="name == 'splice'" language="TypeScript" />
           <url>file://$PROJECT_DIR$/node_modules/cordis/src/context.ts</url>
           <line>122</line>
           <option name="timeStamp" value="22" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="javascript">
-          <url>file://$PROJECT_DIR$/external/webui/plugins/config/lib/shared/index.js</url>
-          <line>271</line>
+          <url>file:///storage/emulated/0/Projects/WebstormProjects/koishi-bp/external/youareanidiot/src/shared/index.ts</url>
+          <line>7</line>
           <option name="timeStamp" value="28" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="javascript">
-          <url>file://$PROJECT_DIR$/node_modules/koishi/src/worker/daemon.ts</url>
-          <line>36</line>
-          <option name="timeStamp" value="61" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="javascript">
-          <url>file://$PROJECT_DIR$/node_modules/@koishijs/loader/src/shared.ts</url>
-          <line>406</line>
-          <option name="timeStamp" value="63" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="javascript">
-          <url>file://$PROJECT_DIR$/node_modules/@koishijs/loader/src/index.ts</url>
-          <line>92</line>
-          <option name="timeStamp" value="64" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="javascript">
-          <url>file://$PROJECT_DIR$/node_modules/@koishijs/loader/src/index.ts</url>
-          <line>95</line>
-          <option name="timeStamp" value="65" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="javascript">
-          <url>file://$PROJECT_DIR$/node_modules/@koishijs/loader/lib/shared.mjs</url>
-          <line>349</line>
-          <option name="timeStamp" value="66" />
+          <url>file://$PROJECT_DIR$/test/util.ts</url>
+          <line>15</line>
+          <option name="timeStamp" value="41" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

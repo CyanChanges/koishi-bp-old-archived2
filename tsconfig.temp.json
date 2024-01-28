@@ -11,52 +11,10 @@
       "path": "./external/koishi/plugins/server"
     },
     {
-      "path": "./external/koishi/plugins/mock"
+      "path": "./external/webui/packages/components"
     },
     {
-      "path": "./external/koishi/plugins/database/sqlite"
-    },
-    {
-      "path": "./external/koishi/plugins/database/postgres"
-    },
-    {
-      "path": "./external/koishi/plugins/database/mysql"
-    },
-    {
-      "path": "./external/koishi/plugins/database/mongo"
-    },
-    {
-      "path": "./external/koishi/plugins/database/memory"
-    },
-    {
-      "path": "./external/koishi/plugins/common/inspect"
-    },
-    {
-      "path": "./external/koishi/plugins/common/help"
-    },
-    {
-      "path": "./external/koishi/plugins/common/echo"
-    },
-    {
-      "path": "./external/koishi/plugins/common/callme"
-    },
-    {
-      "path": "./external/koishi/plugins/common/broadcast"
-    },
-    {
-      "path": "./external/koishi/plugins/common/bind"
-    },
-    {
-      "path": "./external/koishi/plugins/hmr"
-    },
-    {
-      "path": "./external/test"
-    },
-    {
-      "path": "./external/koishi-env"
-    },
-    {
-      "path": "./external/dispose-root"
+      "path": "./external/webui/packages/client"
     }
   ]
 }
